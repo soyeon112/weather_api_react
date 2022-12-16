@@ -142,11 +142,7 @@ function CurrentpositionWeather({ api, data, temp, lat, lon, icon }) {
             <WeatherNum>{setTemp}</WeatherNum>
             <WeatherUnits>º</WeatherUnits>
           </WeatherDiv>
-          {/* <MaxMinTempDiv>
-            <MaxMinTempText>
-              최고 {maxTemp}º / 최저 {minTemp}º
-            </MaxMinTempText>
-          </MaxMinTempDiv> */}
+
           <GpsInfoDiv>
             <GpsPointerImg src={icon_gpsPointer} />
             <GpsText>{currentPosition}</GpsText>
@@ -161,8 +157,8 @@ function CurrentpositionWeather({ api, data, temp, lat, lon, icon }) {
           humidity={humidity}
           wind={wind}
         />
+        {temp && <Attire temp={setTemp} />}
       </WeatherEtcDiv>
-      {temp && <Attire temp={setTemp} />}
     </>
   );
 }

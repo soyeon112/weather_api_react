@@ -8,8 +8,8 @@ import GetTodayWeather from "../component/GetTodayWeather";
 
 const PageWidth = styled.div`
   font-family: "LeferiBaseType-RegularA";
-  width: 90%;
-  height: 650px;
+  width: 65%;
+  height: 750px; /*650*/
   background-color: #ecf0f3;
   padding: 10px;
   margin: 20px auto 20px auto;

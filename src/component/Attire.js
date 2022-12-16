@@ -7,9 +7,9 @@ const MainText = styled.p`
   font-size: 0.9rem;
 `;
 const Box = styled.div`
-  width: 30%;
-  height: 235px;
-  margin: 25px 15px 25px 0;
+  width: 90%;
+  height: 230px;
+  margin: 25px;
   padding: 7px 15px;
   background-color: #ecf0f3;
   border-radius: 10px;
@@ -42,6 +42,7 @@ const RecoMainText = styled.p`
 `;
 
 const SeasonItemsDiv = styled.div`
+  width: 85%;
   margin: auto;
   padding: 5px;
   display: flex;
