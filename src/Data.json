@@ -1,0 +1,18 @@
+{
+  "한겨울": {
+    "img": [
+      "winter_hat.png",
+      "winter_scarf.png",
+      "winter_jacket2.png",
+      "winter_boots.png"
+    ],
+    "text": ["패딩", "점퍼", "히트텍", "목도리", "모자", "경량패딩", "부츠"]
+  },
+  "초겨울": ["img1", "img2", "img3"],
+  "늦가을": ["img1", "img2", "img3"],
+  "초가을": ["img1", "img2", "img3"],
+  "봄": ["img1", "img2", "img3"],
+  "초봄": ["img1", "img2", "img3"],
+  "초여름": ["img1", "img2", "img3"],
+  "한여름": ["img1", "img2", "img3"]
+}
