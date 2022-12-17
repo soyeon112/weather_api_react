@@ -22,13 +22,13 @@ const EtcMainText = styled.p`
   font-size: 1rem;
   color: #686868;
   margin-top: 20px;
-  padding-left: 10px;
+  padding-left: 5px;
 `;
 const EtxSubText = styled.p`
   margin-top: -2px;
   font-size: 1.3rem;
   color: #7b81be;
-  padding-left: 10px;
+  padding-left: 5px;
 `;
 function WeatherEtc({ maxTemp, minTemp, humidity, wind }) {
   return (
@@ -36,11 +36,11 @@ function WeatherEtc({ maxTemp, minTemp, humidity, wind }) {
       <AllDiv>
         <EtcBox>
           <EtcMainText>최고 온도</EtcMainText>
-          <EtxSubText>{maxTemp}º</EtxSubText>
+          <EtxSubText>{maxTemp}℃</EtxSubText>
         </EtcBox>
         <EtcBox>
           <EtcMainText>최저 온도</EtcMainText>
-          <EtxSubText>{minTemp}º</EtxSubText>
+          <EtxSubText>{minTemp}℃</EtxSubText>
         </EtcBox>
         <EtcBox>
           <EtcMainText>습도</EtcMainText>

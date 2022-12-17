@@ -132,7 +132,7 @@ function GetTodayWeather({ api, lat, lon, data, weatherText }) {
           {todayWeather &&
             todayWeather.map((it, id) => (
               <TimeWeatherDiv>
-                <TempText>{it.main.temp}</TempText>
+                <TempText>{it.main.temp}℃</TempText>
                 <img
                   src={`http://openweathermap.org/img/w/${it.weather[0].icon}.png`}
                 />

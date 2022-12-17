@@ -140,7 +140,7 @@ function CurrentpositionWeather({ api, data, temp, lat, lon, icon }) {
           <WeatherIcon src={imgUrl} />
           <WeatherDiv>
             <WeatherNum>{setTemp}</WeatherNum>
-            <WeatherUnits>º</WeatherUnits>
+            <WeatherUnits>℃</WeatherUnits>
           </WeatherDiv>
 
           <GpsInfoDiv>
