@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/weather_api_react/static/js/main.3e6b0289.js",
+    "main.js": "/weather_api_react/static/js/main.b249067a.js",
     "static/media/winter_items.png": "/weather_api_react/static/media/winter_items.efc47bd0d291b0e1448c.png",
     "index.html": "/weather_api_react/index.html",
-    "main.3e6b0289.js.map": "/weather_api_react/static/js/main.3e6b0289.js.map"
+    "main.b249067a.js.map": "/weather_api_react/static/js/main.b249067a.js.map"
   },
   "entrypoints": [
-    "static/js/main.3e6b0289.js"
+    "static/js/main.b249067a.js"
   ]
 }
