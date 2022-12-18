@@ -23,10 +23,10 @@ const Box = styled.div`
     margin-left: 18px;
   }
   @media (max-width: 500px) {
-    width: 98%;
-    margin-left: 5px;
-    margin-bottom: 15px;
+    width: 95%;
     height: 190px;
+    margin: 20px auto 15px auto;
+    margin-left: 10px;
   }
 `;
 
