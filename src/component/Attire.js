@@ -61,7 +61,7 @@ const ItemImg = styled.img`
 `;
 
 const SeasonItemsDiv = styled.div`
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
   padding: 5px;
   display: flex;
@@ -71,7 +71,7 @@ const SeasonItemsDiv = styled.div`
     width: 95%;
   }
   @media (max-width: 500px) {
-    width: 95%;
+    width: 90%;
   }
 `;
 

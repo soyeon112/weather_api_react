@@ -42,12 +42,21 @@ const EtcMainText = styled.p`
   color: #686868;
   margin-top: 20px;
   padding-left: 5px;
+  @media (max-width: 500px) {
+    font-size: 0.9rem;
+    margin-top: 13px;
+    padding-left: 3px;
+  }
 `;
 const EtxSubText = styled.p`
   margin-top: -2px;
   font-size: 1.3rem;
   color: #7b81be;
   padding-left: 5px;
+  @media (max-width: 500px) {
+    font-size: 1.15rem;
+    padding-left: 3px;
+  }
 `;
 function WeatherEtc({ maxTemp, minTemp, humidity, wind }) {
   return (
