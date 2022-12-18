@@ -38,6 +38,7 @@ const WeatherDiv = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  overflow-x: scroll;
 `;
 const TimeWeatherDiv = styled.div`
   width: 20%;

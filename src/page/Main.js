@@ -23,6 +23,8 @@ const PageWidth = styled.div`
   }
   @media (max-width: 500px) {
   }
+  @media (max-width: 390px) {
+  }
 `;
 function Main() {
   return (

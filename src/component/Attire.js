@@ -10,7 +10,7 @@ const MainText = styled.p`
 const Box = styled.div`
   width: 100%;
   height: 230px;
-  margin-top: 25px;
+  margin-top: 20px;
   padding-top: 7px;
   background-color: #ecf0f3;
   display: inline-block;
@@ -25,6 +25,8 @@ const Box = styled.div`
   @media (max-width: 500px) {
     width: 98%;
     margin-left: 5px;
+    margin-bottom: 15px;
+    height: 190px;
   }
 `;
 
@@ -33,6 +35,13 @@ const OutputSeasonDiv = styled.div`
   margin: 10px auto 20px auto;
   display: flex;
   justify-content: center;
+  /* display: inline-block; */
+  @media (max-width: 820px) {
+    width: 95%;
+  }
+  @media (max-width: 500px) {
+    width: 98%;
+  }
 `;
 const ItemImg = styled.img`
   width: 60px;
@@ -44,6 +53,11 @@ const ItemImg = styled.img`
   padding: 15px;
   box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.7),
     inset 5px 5px 10px 0px rgba(166, 180, 200, 0.5);
+  @media (max-width: 500px) {
+    width: 10%;
+    height: 10%;
+    /* object-fit: contain; */
+  }
 `;
 
 const SeasonItemsDiv = styled.div`
@@ -70,6 +84,10 @@ const SeasonItemText = styled.span`
   background-color: #ecf0f3;
   box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.7),
     5px 5px 10px 0px rgba(166, 180, 200, 0.5);
+  @media (max-width: 500px) {
+    padding: 5px;
+    font-size: 0.5rem;
+  }
 `;
 
 function FindTempClothes(temp) {

@@ -2,18 +2,22 @@ import React from "react";
 import styled from "styled-components";
 
 const AllDiv = styled.div`
-  width: 100%;
   height: 145px;
-  /* margin: 25px 18px; */
   border-radius: 10px;
-  padding: 27px;
-  @media (max-width: 820px) {
+  margin: 20px auto 0 auto;
+  padding-left: 5%;
+  display: block;
+  @media (max-width: 768px) {
     padding-left: 15px;
   }
   @media (max-width: 500px) {
-    padding-left: 40px;
+    padding-left: 15%;
+  }
+  @media (max-width: 390px) {
+    padding-left: 15px;
   }
 `;
+
 const EtcBox = styled.div`
   width: 100px;
   height: 100px;
@@ -24,6 +28,14 @@ const EtcBox = styled.div`
     inset 5px 5px 10px 0px rgba(166, 180, 200, 0.5);
   padding: 15px;
   float: left;
+  @media (max-width: 768px) {
+    width: 90px;
+    height: 90px;
+  }
+  @media (max-width: 500px) {
+    width: 80px;
+    height: 80px;
+  }
 `;
 const EtcMainText = styled.p`
   font-size: 1rem;

@@ -95,8 +95,6 @@ const GpsText = styled.span`
 
 const WeatherDiv = styled.div`
   margin: 50px auto 0 auto;
-
-  position: relative;
   display: flex;
   flex-direction: row;
   padding-left: 10px;
@@ -119,6 +117,7 @@ const WeatherIcon = styled.img`
     width: 150px;
   }
   @media (max-width: 500px) {
+    width: 100px;
   }
 `;
 const WeatherNum = styled.span`
