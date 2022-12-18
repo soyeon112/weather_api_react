@@ -1,22 +1,11 @@
 {
   "files": {
-    "main.css": "/weather_api_react/static/css/main.ed3fdd1f.css",
-    "main.js": "/weather_api_react/static/js/main.455ba3db.js",
-    "static/media/NanumSquareRoundR.woff": "/weather_api_react/static/media/NanumSquareRoundR.a8fc5394f041ad651c5e.woff",
-    "static/media/NanumSquareRoundB.woff": "/weather_api_react/static/media/NanumSquareRoundB.db41487c4c489a2f8131.woff",
-    "static/media/NanumSquareRoundEB.woff": "/weather_api_react/static/media/NanumSquareRoundEB.1adb450aae114f9385fa.woff",
-    "static/media/PlayfairDisplay-VariableFont_wght.woff": "/weather_api_react/static/media/PlayfairDisplay-VariableFont_wght.848c38442b0581e41bca.woff",
-    "static/media/OpenSans-Regular.woff": "/weather_api_react/static/media/OpenSans-Regular.990b8f36492d19284465.woff",
-    "static/media/OpenSans-Light.woff": "/weather_api_react/static/media/OpenSans-Light.94170e2f7e545d994b8b.woff",
-    "static/media/OpenSans-Bold.woff": "/weather_api_react/static/media/OpenSans-Bold.92bf932d2a341141d306.woff",
+    "main.js": "/weather_api_react/static/js/main.ed22f74a.js",
     "static/media/winter_items.png": "/weather_api_react/static/media/winter_items.efc47bd0d291b0e1448c.png",
-    "static/media/icon_weather.png": "/weather_api_react/static/media/icon_weather.b0d8d49d736a9c4d4abc.png",
     "index.html": "/weather_api_react/index.html",
-    "main.ed3fdd1f.css.map": "/weather_api_react/static/css/main.ed3fdd1f.css.map",
-    "main.455ba3db.js.map": "/weather_api_react/static/js/main.455ba3db.js.map"
+    "main.ed22f74a.js.map": "/weather_api_react/static/js/main.ed22f74a.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed3fdd1f.css",
-    "static/js/main.455ba3db.js"
+    "static/js/main.ed22f74a.js"
   ]
 }
