@@ -2,9 +2,17 @@ import React from "react";
 import styled from "styled-components";
 
 const AllDiv = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  width: 100%;
+  height: 145px;
+  /* margin: 25px 18px; */
+  border-radius: 10px;
+  padding: 27px;
+  @media (max-width: 820px) {
+    padding-left: 15px;
+  }
+  @media (max-width: 500px) {
+    padding-left: 40px;
+  }
 `;
 const EtcBox = styled.div`
   width: 100px;
@@ -15,8 +23,7 @@ const EtcBox = styled.div`
   box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.7),
     inset 5px 5px 10px 0px rgba(166, 180, 200, 0.5);
   padding: 15px;
-  display: flex;
-  flex-direction: column;
+  float: left;
 `;
 const EtcMainText = styled.p`
   font-size: 1rem;

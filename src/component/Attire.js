@@ -5,16 +5,27 @@ import data from "../Data.json";
 
 const MainText = styled.p`
   font-size: 0.9rem;
+  margin-left: 25px;
 `;
 const Box = styled.div`
-  width: 90%;
+  width: 100%;
   height: 230px;
-  margin: 25px;
-  padding: 7px 15px;
+  margin-top: 25px;
+  padding-top: 7px;
   background-color: #ecf0f3;
+  display: inline-block;
   border-radius: 10px;
   box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.7),
     5px 5px 10px 0px rgba(166, 180, 200, 0.5);
+  @media (max-width: 820px) {
+    width: 95%;
+    display: inline-block;
+    margin-left: 18px;
+  }
+  @media (max-width: 500px) {
+    width: 98%;
+    margin-left: 5px;
+  }
 `;
 
 const OutputSeasonDiv = styled.div`
@@ -35,19 +46,19 @@ const ItemImg = styled.img`
     inset 5px 5px 10px 0px rgba(166, 180, 200, 0.5);
 `;
 
-const RecoMainText = styled.p`
-  font-size: 1rem;
-  color: #155472;
-  margin: 30px 15px 20px 15px;
-`;
-
 const SeasonItemsDiv = styled.div`
-  width: 85%;
-  margin: auto;
+  width: 70%;
+  margin: 0 auto;
   padding: 5px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media (max-width: 820px) {
+    width: 95%;
+  }
+  @media (max-width: 500px) {
+    width: 95%;
+  }
 `;
 
 const SeasonItemText = styled.span`

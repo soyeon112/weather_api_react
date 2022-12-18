@@ -7,22 +7,37 @@ import Attire from "./Attire";
 import WeatherEtc from "./WeatherEtc";
 
 //styled ------------------------------------
-const TitleText = styled.p`
-  font-size: 0.9rem;
-`;
-const CurrentPositionWeatherDiv = styled.div`
-  width: 20%;
-  height: 90%;
-  background-color: #ecf0f3;
-  margin: 25px 0 25px 15px;
-  border-radius: 10px;
-  padding: 5px;
+
+const DDiv = styled.div`
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
+
+  @media (max-width: 820px) {
+    flex-direction: column;
+    display: block;
+  }
+  @media (max-width: 500px) {
+  }
+`;
+
+const CurrentPositionWeatherDiv = styled.div`
+  width: 25%;
+  background-color: #ecf0f3;
+  margin: 30px 25px;
+  align-items: center;
+  border-radius: 10px;
   box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.7),
     5px 5px 10px 0px rgba(166, 180, 200, 0.5);
-  @media (max-width: 768px) {
-    width: 35%;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 820px) {
+    width: 95%;
+    height: 170px;
+    margin: 15px auto;
+    flex-direction: row;
   }
   @media (max-width: 500px) {
   }
@@ -30,24 +45,39 @@ const CurrentPositionWeatherDiv = styled.div`
 
 const WeatherOutPutDiv = styled.div`
   width: 100%;
+  height: 100%;
   margin: 0 auto;
   align-items: center;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  @media (max-width: 768px) {
+  @media (max-width: 820px) {
+    flex-direction: row;
+    width: 80%;
   }
   @media (max-width: 500px) {
   }
 `;
+const Div = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+`;
+
 const GpsInfoDiv = styled.div`
   margin: 0 auto;
   margin-top: 25px;
+  @media (max-width: 820px) {
+    margin-top: 10px;
+  }
+  @media (max-width: 500px) {
+  }
 `;
 const GpsPointerImg = styled.img`
   width: 12px;
   padding-top: 5px;
-  @media (max-width: 768px) {
+  @media (max-width: 820px) {
   }
   @media (max-width: 500px) {
   }
@@ -56,7 +86,7 @@ const GpsText = styled.span`
   font-size: 0.9rem;
   margin-left: 5px;
   color: #686868;
-  @media (max-width: 768px) {
+  @media (max-width: 820px) {
   }
   @media (max-width: 500px) {
     font-size: 0.8rem;
@@ -65,16 +95,28 @@ const GpsText = styled.span`
 
 const WeatherDiv = styled.div`
   margin: 50px auto 0 auto;
+
   position: relative;
   display: flex;
   flex-direction: row;
+  padding-left: 10px;
+  @media (max-width: 1280px) {
+  }
+  @media (max-width: 820px) {
+    margin: 15px auto 0 auto;
+  }
+  @media (max-width: 500px) {
+  }
 `;
 const WeatherIcon = styled.img`
   width: 200px;
   margin-top: 25px;
   @media (max-width: 1280px) {
   }
-  @media (max-width: 768px) {
+  @media (max-width: 820px) {
+    margin-top: 0px;
+    margin-left: 10%;
+    width: 150px;
   }
   @media (max-width: 500px) {
   }
@@ -86,8 +128,8 @@ const WeatherNum = styled.span`
   @media (max-width: 1280px) {
     font-size: 4.5rem;
   }
-  @media (max-width: 768px) {
-    font-size: 4.5rem;
+  @media (max-width: 820px) {
+    font-size: 4rem;
   }
   @media (max-width: 500px) {
   }
@@ -96,26 +138,21 @@ const WeatherUnits = styled.span`
   font-size: 2rem;
   font-weight: bold;
   color: #7b81be;
-  @media (max-width: 768px) {
+  @media (max-width: 820px) {
     font-size: 1.8rem;
   }
   @media (max-width: 500px) {
   }
 `;
 
-const MaxMinTempDiv = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-`;
-
-const MaxMinTempText = styled.span`
-  font-size: 0.8rem;
-  color: #6b92e5;
-`;
-
 const WeatherEtcDiv = styled.div`
-  margin: 0 auto;
+  width: 100%;
+  margin: 30px 25px;
+  @media (max-width: 820px) {
+    margin: 0 auto;
+  }
+  @media (max-width: 500px) {
+  }
 `;
 
 function CurrentpositionWeather({ api, data, temp, lat, lon, icon }) {
@@ -134,20 +171,21 @@ function CurrentpositionWeather({ api, data, temp, lat, lon, icon }) {
   let wind = data.wind.speed;
 
   return (
-    <>
+    <DDiv>
       <CurrentPositionWeatherDiv>
-        <WeatherOutPutDiv>
-          <WeatherIcon src={imgUrl} />
+        {/* <WeatherOutPutDiv> */}
+        <WeatherIcon src={imgUrl} />
+        <Div>
           <WeatherDiv>
             <WeatherNum>{setTemp}</WeatherNum>
             <WeatherUnits>℃</WeatherUnits>
           </WeatherDiv>
-
           <GpsInfoDiv>
             <GpsPointerImg src={icon_gpsPointer} />
             <GpsText>{currentPosition}</GpsText>
           </GpsInfoDiv>
-        </WeatherOutPutDiv>
+        </Div>
+        {/* </WeatherOutPutDiv> */}
       </CurrentPositionWeatherDiv>
       <WeatherEtcDiv>
         <GetTodayWeather api={api} lat={lat} lon={lon} data={data} />
@@ -159,7 +197,7 @@ function CurrentpositionWeather({ api, data, temp, lat, lon, icon }) {
         />
         {temp && <Attire temp={setTemp} />}
       </WeatherEtcDiv>
-    </>
+    </DDiv>
   );
 }
 

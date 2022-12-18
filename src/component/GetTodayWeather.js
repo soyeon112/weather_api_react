@@ -2,6 +2,24 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 
+const TextOutPutDiv = styled.div`
+  /* width: 95%; */
+  width: 100%;
+  height: 230px;
+  /* margin: 25px 18px; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ecf0f3;
+  box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.7),
+    5px 5px 10px 0px rgba(166, 180, 200, 0.5);
+  @media (max-width: 820px) {
+    width: 95%;
+    margin: 20px auto 0 auto;
+  }
+  @media (max-width: 500px) {
+  }
+`;
 const TodayWeatherDiv = styled.div`
   width: 90%;
   padding: 20px 10px;
@@ -10,7 +28,7 @@ const TodayWeatherDiv = styled.div`
   background-color: #ecf0f3;
   box-shadow: inset -5px -5px 10px 0px rgba(255, 255, 255, 0.7),
     inset 5px 5px 10px 0px rgba(166, 180, 200, 0.5);
-  @media (max-width: 768px) {
+  @media (max-width: 820px) {
   }
   @media (max-width: 500px) {
   }
@@ -40,23 +58,7 @@ const MiniText = styled.p`
   margin: 0 0;
   color: #686868;
 `;
-const TextOutPutDiv = styled.div`
-  /* width: 45%; */
-  width: 95%;
-  height: 250px;
-  margin: 25px 18px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  background-color: #ecf0f3;
-  box-shadow: -5px -5px 10px 0px rgba(255, 255, 255, 0.7),
-    5px 5px 10px 0px rgba(166, 180, 200, 0.5);
-  @media (max-width: 768px) {
-  }
-  @media (max-width: 500px) {
-    width: 40%;
-  }
-`;
+
 const TextOutPut = styled.p`
   font-size: 1.2rem;
   font-weight: 550;

@@ -1,8 +1,5 @@
 import React, { useEffect, useState } from "react";
 import CurrentpositionWeather from "./CurrentpositionWeather";
-import WeatherEtc from "./WeatherEtc";
-import GetTodayWeather from "./GetTodayWeather";
-import Attire from "./Attire";
 
 /**현재 위치 찾은 후 그 위치의 날씨정보 받아오는 함수 */
 function GetWeather() {
